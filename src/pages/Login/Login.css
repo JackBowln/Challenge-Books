@@ -1,0 +1,89 @@
+#login_page {
+  background-image: url("../../assets/Background-Image.png");
+  background-repeat: no-repeat, repeat;
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center; /* Center the image */
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.login-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 220px;
+  width: 370px;
+  justify-content: center;
+  margin: auto 115px;
+}
+@media (max-width: 768px) {
+  .login-form {
+    margin: auto 0;
+  }
+  #login_page {
+    justify-content: center;
+  }
+}
+#login_page input {
+  height: 60px;
+  background: #00000032;
+  color: white;
+  padding-top: 20px;
+}
+#login_page label {
+  opacity: 1;
+  position: absolute;
+  padding: 5px 17px;
+  transition: 0.2s ease all;
+  color: #ffffff;
+  opacity: 0.5;font-weight: normal;
+}
+#login_page input::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+.css-1kxonj9 {
+  width: 100%;
+  position: relative;
+  margin-top: 16px;
+}
+#login_page button {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  border-radius: 44px;
+  color: #b22e6f;
+  background: white;
+  padding: 0 22px;
+}
+#login_page h1 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 48px;
+}
+.input-submit {
+  position: relative;
+}
+
+#login_page div[id$="feedback"] {
+  color: white;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(2px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 4px;
+  padding: 16px;
+}
+
+#login_page div[id$="feedback"]::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: -10px;
+  position: absolute;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid rgba(255, 255, 255, 0.4);
+}
